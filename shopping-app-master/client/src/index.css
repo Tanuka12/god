@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400;1,600&family=Cinzel:wght@500;600;700&family=Halant:wght@300;400;500&display=swap");
+
+body {
+  background-color: rgb(252, 252, 252);
+  font-family: "Cinzel", serif;
+}
+
+main {
+  min-height: 80vh;
+}
+
+/* General component */
+
+small {
+  font-family: "Playfair Display", serif;
+}
+
+@media (min-width: 768px) {
+  small {
+    font-size: 0.8rem;
+  }
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* icon */
+i {
+  margin: 0 0.2rem;
+}
+
+.bxs-chevrons-left {
+  vertical-align: middle;
+}
+
+/* =========== Carousel ================= */
+.carousel-img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 500px;
+}
+.carousel-item:hover .carousel-caption {
+  opacity: 1;
+}
+.carousel-caption {
+  padding: 4vw;
+  opacity: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-end;
+  align-items: flex-start;
+  text-align: left;
+  top: 0;
+  left: 1px;
+  right: 1px;
+  bottom: 0;
+  border: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.carouselname {
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0;
+}
+
+.carouseldesc {
+  font-style: italic;
+}
+
+@media (max-width: 576px) {
+  .carouseldesc {
+    overflow: hidden;
+    max-height: 50px;
+    font-size: 0.5rem;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 8%;
+}
+
+/* ============================================*/
+h3 {
+  margin: 2rem 0 1rem 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+h4 {
+  margin: 1rem 0;
+}
+
+h5 {
+  margin: 2rem 0;
+  letter-spacing: 2px;
+}
+
+/* ================  Nav bar ================ */
+.nav-item {
+  margin: 0;
+}
+
+.navbar-elements {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+#search-box {
+  font-style: italic;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+}
+@media (max-width: 991px) {
+  #search-box {
+    margin: 1rem 0;
+  }
+
+  .form-control {
+    margin: 0.75rem 0 !important;
+    width: 100% !important;
+  }
+  .form-inline {
+    width: 100%;
+  }
+
+  .nav-button {
+    margin-bottom: 0.75rem;
+    width: 100%;
+  }
+}
+
+/*=========== Product Component & Screen ===============*/
+
+.product-name {
+  text-transform: lowercase;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+  font-weight: 500;
+}
+
+.product-name-title {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.rating span {
+  margin: 0.2rem 0;
+}
+
+.rating span i {
+  margin: 0 1px;
+  font-size: 0.6rem;
+}
+
+.num-reviews {
+  display: inline-block;
+  padding-left: 0.3rem;
+  letter-spacing: 0;
+}
+
+.desc-text {
+  font-family: "Halant", serif;
+  font-weight: 500;
+}
+
+.product-reviews {
+  font-family: "Halant", serif;
+  font-weight: 500;
+  font-size: 1.04rem;
+  letter-spacing: 0.3px;
+}
+
+.card {
+  overflow: hidden;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  min-height: 200px;
+}
+
+.card-img-top {
+  transition: transform 1s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.product-name:hover {
+  color: #000;
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    flex: 1 1 auto;
+    min-height: 140px;
+    padding: 1rem;
+  }
+  .product-name {
+    text-transform: lowercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.8px;
+    font-weight: 500;
+  }
+
+  .product-price {
+    margin: 1rem 0;
+    font-size: 0.8rem;
+  }
+}
+
+/*======== Cart Screen ================*/
+/* .shopping-cart {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin: 1.2rem 0;
+} */
+
+.subtotal-cart {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* =================================== */
+#sign-in {
+  margin: 2rem 0;
+}
+
+#my-orders {
+  margin: 2rem 0;
+  font-size: 1.3rem;
+}
+
+.form-control {
+  font-family: serif;
+  letter-spacing: 0.8px;
+  font-size: 1rem;
+}
+
+.order-details {
+  font-family: "Halant", serif;
+  font-weight: 500;
+}
+
+/* UserListScreen */
+.fa-check {
+  color: rgb(80, 170, 80);
+}
+
+.fa-times {
+  color: rgb(228, 55, 55);
+}
+
+.table-body {
+  font-family: "Halant", serif;
+  font-weight: 500;
+}
